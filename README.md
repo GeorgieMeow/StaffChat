@@ -13,5 +13,5 @@ A Paper Minecraft plugin for 1.21.11 that lets your staff chat in a private chat
 
 - Download the latest .jar from the releases page, put the .jar into your plugins folder and restart the server!
 
-#License
+# License
 StaffChat is licensed under the permissive MIT license. Please see LICENSE.txt for more info.
