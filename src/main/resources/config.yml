@@ -1,0 +1,13 @@
+#StaffChat Configuration file
+
+
+format: "&b%player%&7: &f%message%"   # DON'T TOUCH THE PERCENTAGES, ONLY THE COLORS, add LuckPerms %prefix% and %suffix% if you like!.
+
+messages:                             #Edit any messages to what you see fit!
+  toggle-on: "&aStaff chat enabled."
+  toggle-off: "&cStaff chat disabled."
+  no-permission: "You don't have permission to run this command!"
+  usage: "/staffcall [player]"
+  unknown-player: "Player not found!"
+  prefix: "&c[SC] "
+  call: "&6--- [%player%] wants you in staff chat! ---"

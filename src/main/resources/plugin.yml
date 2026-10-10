@@ -1,0 +1,23 @@
+name: StaffChat
+description: $description
+version: '${version}'
+
+main: com.github.GeorgieMeow.staffChat.StaffChat
+api-version: '1.21.11'
+load: POST-WORLD
+
+authors: [ GeorgieMeow ]
+
+commands:
+  StaffChat:
+    description: Switch your chat to a private staff chat!
+    usage: /staffchat
+  StaffCall:
+    description: Call any staff member to tell them to check staff chat!
+    usage: /callstaff [player]
+
+permissions:
+  StaffChat.isStaff:
+    description: Allows switching to staff chat!
+    default: op
+
