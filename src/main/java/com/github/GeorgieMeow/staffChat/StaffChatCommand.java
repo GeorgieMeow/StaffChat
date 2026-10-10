@@ -26,7 +26,7 @@ public class StaffChatCommand implements CommandExecutor, Listener {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
         if (sender instanceof Player player) {
-            boolean inStaffChat = staffChat.getOrDefault(player.getUniqueId(), false);
+            boolean inStaffChat = staffChat.getOrDefault(player.getUniqueId(), false); //get player data
             if (sender.hasPermission("StaffChat.isStaff")) {
 
                 if (!inStaffChat) {
@@ -55,9 +55,7 @@ public class StaffChatCommand implements CommandExecutor, Listener {
         boolean inStaffChannel = staffChat.getOrDefault(player.getUniqueId(), false);
         if (inStaffChannel) {
             event.setCancelled(true);
-            sendStaffMessage(event.getPlayer(), net.kyori.adventure.text.serializer.plain
-                    .PlainTextComponentSerializer.plainText()
-                    .serialize(event.message()));
+            sendStaffMessage(event.getPlayer(), net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer.plainText().serialize(event.message()));
         }
     }
 
