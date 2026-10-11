@@ -23,12 +23,19 @@ public class StaffCallCommand implements CommandExecutor, TabCompleter {
         if(sender instanceof Player ) {
             if (sender.hasPermission("StaffChat.isStaff")) {
                 if (args.length == 1) {
-                    String format = String.valueOf(LegacyComponentSerializer.legacy('&').deserialize(prefix + JavaPlugin.getPlugin(StaffChat.class).getConfig().getString("messages.call", "&6--- [%player%] wants you in staff chat! ---")));
-                    // Replace placeholders with the actual sender name and message
-                    String formatted = format.replace("%player%", sender.getName());
-                    Objects.requireNonNull(Bukkit.getPlayer(args[0])).sendActionBar(Component.text(formatted));
+                    if(Objects.requireNonNull(Bukkit.getPlayer(args[0])).hasPermission("StaffChat.isStaff")) {
+                        //formatting
+                        String format = String.valueOf(LegacyComponentSerializer.legacy('&').deserialize(prefix + JavaPlugin.getPlugin(StaffChat.class).getConfig().getString("messages.call", "&6--- [%player%] wants you in staff chat! ---")));
+                        String formatted = format.replace("%player%", sender.getName());
+                        Objects.requireNonNull(Bukkit.getPlayer(args[0])).sendActionBar(Component.text(formatted));
+                    } else {
+                        //formatting
+                        String format = String.valueOf(LegacyComponentSerializer.legacy('&').deserialize(prefix + JavaPlugin.getPlugin(StaffChat.class).getConfig().getString("messages.recipient-no-permission","%Player% does not have permission to join staff chat!" )));
+                        String formatted = format.replace("%player%", sender.getName());
+                        sender.sendMessage(formatted);
+                    }
                 } else {
-                    sender.sendMessage(prefix + JavaPlugin.getPlugin(StaffChat.class).getConfig().getString("messages.usage", "Usage: /staffCall [Player]"));
+                    sender.sendMessage(String.valueOf(LegacyComponentSerializer.legacy('&').deserialize(prefix + JavaPlugin.getPlugin(StaffChat.class).getConfig().getString("messages.usage", "Usage: /staffCall [Player]"))));
                 }
                 return true;
 

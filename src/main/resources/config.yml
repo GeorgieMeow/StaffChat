@@ -11,3 +11,4 @@ messages:                             #Edit any messages to what you see fit!
   unknown-player: "Player not found!"
   prefix: "&c[SC] "
   call: "&6--- [%player%] wants you in staff chat! ---"
+  recipient-no-permission: "%Player% does not have permission to join staff chat!"
