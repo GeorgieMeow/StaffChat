@@ -66,9 +66,11 @@ public class StaffChatCommand implements CommandExecutor, Listener {
         String formatted = format.replace("%player%", sender.getName()).replace("%message%", message);
 
         for (Player player : Bukkit.getOnlinePlayers()) {
-            boolean inStaffChannel = staffChat.getOrDefault(player.getUniqueId(), false);
-            if (inStaffChannel) {
-                player.sendMessage(formatted);
+            if(player.hasPermission("StaffChat.isStaff")) {
+                boolean inStaffChannel = staffChat.getOrDefault(player.getUniqueId(), false);
+                if (inStaffChannel) {
+                    player.sendMessage(formatted);
+                }
             }
         }
     }
