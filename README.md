@@ -6,7 +6,7 @@ A Paper Minecraft plugin for 1.21.11 that lets your staff chat in a private chat
 
 - Call other staff members to tell them to join the staff chat!
 
-- very customizable, can change message format, change player feedback messages, (ex: toggle messages, no permission messages, etc) and more!
+- very customizable, you can change the message format, change player feedback messages, (ex: toggle messages, no permission messages, etc) and more!
 
 # Installation:
 
