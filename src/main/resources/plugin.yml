@@ -9,12 +9,19 @@ load: POST-WORLD
 authors: [ GeorgieMeow ]
 
 commands:
-  StaffChat:
+  StaffChatToggle:
     description: Switch your chat to a private staff chat!
-    usage: /staffchat
+    usage: /<command>
+    aliases: [staffchattoggle, sct, sctg]
+
   StaffCall:
     description: Call any staff member to tell them to check staff chat!
-    usage: /callstaff [player]
+    usage: /<command> [player]
+    StaffChat:
+
+      description: send a chat message to staff chat without having to be in staff chat!
+      usage: /<command> [Message]
+      aliases: [sc, staffchat]
 
 permissions:
   StaffChat.isStaff:

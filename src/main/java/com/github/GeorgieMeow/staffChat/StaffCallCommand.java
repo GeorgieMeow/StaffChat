@@ -41,30 +41,29 @@ public class StaffCallCommand implements CommandExecutor, TabCompleter {
 
             } else {
                 sender.sendMessage(JavaPlugin.getPlugin(StaffChat.class).getConfig().getString("messages.no-permission", "You don't have permission to run this command!"));
-                return false;
+                return true;
             }
             }else{
             sender.sendMessage("You must run this command as a player!");
-            return false;
+            return true;
         }
     }
 
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {  //I might not need this ngl
         List<String> completions = new ArrayList<>();
-        if(args.length == 1){
+        if (args.length == 1) {
 
-            for(Player player : Bukkit.getOnlinePlayers())
-            {
-                if(player.hasPermission("StaffChat.isStaff")) {
+            for (Player player : Bukkit.getOnlinePlayers()) {
+                if (player.hasPermission("StaffChat.isStaff")) {
                     completions.add(player.getName());
                     return completions;
                 }
             }
         }
-        if(args.length !=1){
+        if (args.length != 1) {
             return Collections.emptyList();
         }
-    return null;
+        return null;
     }
 }
