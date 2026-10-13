@@ -65,14 +65,14 @@ public class StaffChatToggleCommand implements CommandExecutor, Listener, TabCom
         String format = prefix + plugin.getConfig().getString("format", "&b%player%&7: &f%message%");
         // Replace placeholders with the actual sender name and message
         String formatted = format.replace("%player%", sender.getName()).replace("%message%", message);
-        boolean instaffchannel = staffChat.getOrDefault(sender.getUniqueId(), false);
-        if(!instaffchannel) {
+        boolean inStaffChannel = staffChat.getOrDefault(sender.getUniqueId(), false);
+        if(!inStaffChannel) {
             sender.sendRichMessage(formatted);
         }
 
         for (Player player : Bukkit.getOnlinePlayers()) {
             if(player.hasPermission("StaffChat.isStaff")) {
-                boolean inStaffChannel = staffChat.getOrDefault(player.getUniqueId(), false);
+                inStaffChannel = staffChat.getOrDefault(player.getUniqueId(), false);
                 if (inStaffChannel) {
                     player.sendRichMessage(formatted);
                 }
