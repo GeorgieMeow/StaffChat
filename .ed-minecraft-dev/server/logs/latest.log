@@ -1,61 +1,209 @@
-[16:05:04] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+1-b508.27; JetBrains s.r.o. JBR-25.0.4+1-508.27-nomod) on Windows 10 10.0 (amd64)
-[16:05:04] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
-[16:05:05] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[16:05:05] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\StaffChat-1.1.1.jar'...
-[16:05:05] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\StaffChat-1.1.1.jar' in 677ms.
-[16:05:06] [ServerMain/INFO]: [PluginInitializerManager] Initialized 2 plugins
-[16:05:06] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (2):
- - StaffChat (1.0-SNAPSHOT), StaffChat (1.1.1)
-[16:05:10] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[16:05:12] [ServerMain/INFO]: Loaded 1470 recipes
-[16:05:12] [ServerMain/INFO]: Loaded 1584 advancements
-[16:05:12] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[16:05:12] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 308.6ms
-[16:05:12] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[16:05:12] [Server thread/INFO]: Loading properties
-[16:05:12] [Server thread/INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
-[16:05:12] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[16:05:12] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:05:12] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:05:13] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[16:05:13] [Server thread/INFO]: Default game type: CREATIVE
-[16:05:13] [Server thread/INFO]: Generating keypair
-[16:05:13] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:05:13] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[16:05:13] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[16:05:14] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Ambiguous plugin name 'StaffChat' for files 'plugins\.paper-remapped\StaffChat-1.1.1.jar' and 'plugins\.paper-remapped\StaffChat-1.0-SNAPSHOT.jar' in 'plugins\.paper-remapped'
-[16:05:14] [Server thread/INFO]: [StaffChat] Loading server plugin StaffChat v1.1.1
-[16:05:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:05:14] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[16:05:14] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[16:05:14] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[16:05:14] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[16:05:14] [Server thread/INFO]: Preparing level "ed_dev_world"
-[16:05:14] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
-[16:05:14] [Server thread/INFO]: Preparing spawn area: 100%
-[16:05:14] [Server thread/INFO]: Prepared spawn area in 3 ms
-[16:05:14] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
-[16:05:14] [Server thread/INFO]: Prepared spawn area in 2 ms
-[16:05:14] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
-[16:05:14] [Server thread/INFO]: Prepared spawn area in 1 ms
-[16:05:14] [Server thread/INFO]: Done preparing level "ed_dev_world" (0.324s)
-[16:05:14] [Server thread/INFO]: [StaffChat] Enabling StaffChat v1.1.1
-[16:05:14] [Server thread/INFO]: [StaffChat] -------------------------------
-[16:05:14] [Server thread/INFO]: [StaffChat] StaffChat started successfully!
-[16:05:14] [Server thread/INFO]: [StaffChat] -------------------------------
-[16:05:14] [Server thread/INFO]: [spark] Starting background profiler...
-[16:05:14] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
-[16:05:14] [Server thread/INFO]: Running delayed init tasks
-[16:05:14] [Server thread/INFO]: Done (11.105s)! For help, type "help"
-[16:05:15] [Paper Async Task Handler Thread - 1/WARN]: *************************************************************************************
-[16:05:15] [Paper Async Task Handler Thread - 1/WARN]: You are running the latest build for your Minecraft version (1.21.11)
-[16:05:15] [Paper Async Task Handler Thread - 1/WARN]: However, you are 6 release(s) behind the latest stable release (26.3)!
-[16:05:15] [Paper Async Task Handler Thread - 1/WARN]: It is recommended that you update as soon as possible
-[16:05:15] [Paper Async Task Handler Thread - 1/WARN]: https://papermc.io/downloads/paper
-[16:05:15] [Paper Async Task Handler Thread - 1/WARN]: *************************************************************************************
-[16:05:16] [User Authenticator #0/INFO]: UUID of player GeorgieMeow is f1789cad-059c-3370-a0cc-83fcf154fef5
-[16:05:18] [Server thread/INFO]: GeorgieMeow joined the game
-[16:05:18] [Server thread/INFO]: GeorgieMeow[/127.0.0.1:55704] logged in with entity id 17 at ([ed_dev_world]5.010509234974224, -60.0, 9.884772285588982)
-[16:05:56] [Server thread/INFO]: Made GeorgieMeow a server operator
-[16:06:06] [Server thread/INFO]: GeorgieMeow issued server command: /sctg
-[16:06:08] [Server thread/INFO]: GeorgieMeow issued server command: /sct
+[16:47:40] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+1-b508.27; JetBrains s.r.o. JBR-25.0.4+1-508.27-nomod) on Windows 10 10.0 (amd64)
+[16:47:40] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[16:47:41] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:47:41] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:47:41] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - StaffChat (1.1.1)
+[16:47:46] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:47:53] [ServerMain/INFO]: Loaded 1470 recipes
+[16:47:53] [ServerMain/INFO]: Loaded 1584 advancements
+[16:47:53] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[16:47:54] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 761.8ms
+[16:47:54] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[16:47:54] [Server thread/INFO]: Loading properties
+[16:47:54] [Server thread/INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[16:47:54] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:47:55] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:47:55] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:47:56] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[16:47:57] [Server thread/INFO]: Default game type: CREATIVE
+[16:47:57] [Server thread/INFO]: Generating keypair
+[16:47:57] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:47:57] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[16:47:57] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:47:57] [Server thread/INFO]: [StaffChat] Loading server plugin StaffChat v1.1.1
+[16:47:57] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:47:57] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:47:57] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:47:57] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:47:57] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:47:57] [Server thread/INFO]: Preparing level "ed_dev_world"
+[16:47:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[16:47:57] [Server thread/INFO]: Prepared spawn area in 2 ms
+[16:47:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[16:47:57] [Server thread/INFO]: Prepared spawn area in 7 ms
+[16:47:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[16:47:58] [Server thread/INFO]: Prepared spawn area in 2 ms
+[16:47:58] [Server thread/INFO]: Done preparing level "ed_dev_world" (0.459s)
+[16:47:58] [Server thread/INFO]: [StaffChat] Enabling StaffChat v1.1.1
+[16:47:58] [Server thread/ERROR]: Error occurred while enabling StaffChat v1.1.1 (Is it up to date?)
+java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:220) ~[?:?]
+	at StaffChat-1.1.1.jar//com.github.GeorgieMeow.staffChat.StaffChat.registerCommands(StaffChat.java:23) ~[?:?]
+	at StaffChat-1.1.1.jar//com.github.GeorgieMeow.staffChat.StaffChat.onEnable(StaffChat.java:11) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:279) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:207) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:596) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.initPostWorld(MinecraftServer.java:636) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:365) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1253) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[16:47:58] [Server thread/INFO]: [StaffChat] Disabling StaffChat v1.1.1
+[16:47:58] [Server thread/INFO]: [StaffChat] -----------------------------------
+[16:47:58] [Server thread/INFO]: [StaffChat] StaffChat has now stopped! Goodbye!
+[16:47:58] [Server thread/INFO]: [StaffChat] -----------------------------------
+[16:47:58] [Server thread/INFO]: [spark] Starting background profiler...
+[16:47:58] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[16:47:58] [Server thread/INFO]: Running delayed init tasks
+[16:47:58] [Server thread/INFO]: Done (18.353s)! For help, type "help"
+[16:47:58] [Paper Async Task Handler Thread - 1/WARN]: *************************************************************************************
+[16:47:58] [Paper Async Task Handler Thread - 1/WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[16:47:58] [Paper Async Task Handler Thread - 1/WARN]: However, you are 6 release(s) behind the latest stable release (26.3)!
+[16:47:58] [Paper Async Task Handler Thread - 1/WARN]: It is recommended that you update as soon as possible
+[16:47:58] [Paper Async Task Handler Thread - 1/WARN]: https://papermc.io/downloads/paper
+[16:47:58] [Paper Async Task Handler Thread - 1/WARN]: *************************************************************************************
+[16:49:20] [Server thread/INFO]: Unknown or incomplete command. See below for error
+staffcal<--[HERE]
+[16:49:23] [Server thread/ERROR]: Command exception: /staffcall
+org.bukkit.command.CommandException: Cannot execute command 'staffcall' in plugin StaffChat v1.1.1 - plugin is disabled.
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:37) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:469) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:374) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:362) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performPrefixedCommand(Commands.java:353) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:594) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:550) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1833) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1611) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:427) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1667) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1335) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[16:49:23] [Server thread/INFO]: An unexpected error occurred trying to execute that command
+[17:54:17] [User Authenticator #0/INFO]: UUID of player GeorgieMeow is f1789cad-059c-3370-a0cc-83fcf154fef5
+[17:54:19] [Server thread/INFO]: GeorgieMeow joined the game
+[17:54:19] [Server thread/INFO]: GeorgieMeow[/127.0.0.1:50725] logged in with entity id 15 at ([ed_dev_world]2.817059962136266, -60.0, 0.13738639205495304)
+[17:54:48] [Server thread/INFO]: GeorgieMeow issued server command: /staffchattoggle
+[17:54:48] [Server thread/ERROR]: Command exception: /staffchattoggle
+org.bukkit.command.CommandException: Cannot execute command 'staffchattoggle' in plugin StaffChat v1.1.1 - plugin is disabled.
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:37) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:469) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:374) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:362) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2375) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2348) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:177) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1525) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:188) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:151) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1505) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1499) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1225) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1341) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[17:54:50] [Server thread/INFO]: GeorgieMeow issued server command: /staffchattoggle
+[17:54:50] [Server thread/ERROR]: Command exception: /staffchattoggle
+org.bukkit.command.CommandException: Cannot execute command 'staffchattoggle' in plugin StaffChat v1.1.1 - plugin is disabled.
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:37) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:469) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:374) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:362) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2375) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2348) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:177) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1525) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:188) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:151) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1505) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1499) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1225) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1341) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[17:55:43] [Server thread/INFO]: GeorgieMeow issued server command: /staffchattoggle
+[17:55:43] [Server thread/ERROR]: Command exception: /staffchattoggle
+org.bukkit.command.CommandException: Cannot execute command 'staffchattoggle' in plugin StaffChat v1.1.1 - plugin is disabled.
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:37) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:469) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:374) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:362) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2375) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2348) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:177) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1525) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:188) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:151) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1505) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1499) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1225) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1341) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[17:55:46] [Server thread/INFO]: GeorgieMeow issued server command: /staffcall
+[17:55:46] [Server thread/ERROR]: Command exception: /staffcall
+org.bukkit.command.CommandException: Cannot execute command 'staffcall' in plugin StaffChat v1.1.1 - plugin is disabled.
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:37) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:104) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:469) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:374) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:362) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2375) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2348) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:177) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1525) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:188) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:151) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1505) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1499) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1225) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1341) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]

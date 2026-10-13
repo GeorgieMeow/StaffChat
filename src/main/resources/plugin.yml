@@ -4,7 +4,7 @@ version: '${version}'
 
 main: com.github.GeorgieMeow.staffChat.StaffChat
 api-version: '1.21.11'
-load: POST-WORLD
+load: POSTWORLD
 
 authors: [ GeorgieMeow ]
 
@@ -12,13 +12,9 @@ commands:
   StaffChatToggle:
     description: Switch your chat to a private staff chat!
     usage: /<command>
-    aliases: [staffchattoggle, sct, sctg]
+    aliases: [togglestaffchat, sct, sct]
 
-  StaffCall:
-    description: Call any staff member to tell them to check staff chat!
-    usage: /<command> [player]
     StaffChat:
-
       description: send a chat message to staff chat without having to be in staff chat!
       usage: /<command> [Message]
       aliases: [sc, staffchat]
