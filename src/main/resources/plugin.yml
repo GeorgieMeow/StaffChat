@@ -14,10 +14,10 @@ commands:
     usage: /<command>
     aliases: [togglestaffchat, tsc]
 
-    StaffChat:
-      description: send a chat message to staff chat without having to be in staff chat!
-      usage: /<command> [Message]
-      aliases: [sc, staffchat]
+  StaffChat:
+    description: send a chat message to staff chat without having to be in staff chat!
+    usage: /<command> [Message]
+    aliases: [sc, staffchat]
 
 permissions:
   StaffChat.isStaff:
