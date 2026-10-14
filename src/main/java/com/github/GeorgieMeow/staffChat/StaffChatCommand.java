@@ -35,10 +35,15 @@ public class StaffChatCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
-        List<String> suggestions = new ArrayList<>();
-        if (args.length == 1) {
-            suggestions.add("[Message]");
+        if (sender.hasPermission("StaffChat.isStaff")) {
+            List<String> suggestions = new ArrayList<>();
+            if (args.length == 1) {
+                suggestions.add("[Message]");
+            }
+            return suggestions;
+        }else{
+
+            return List.of();
         }
-        return suggestions;
     }
 }
