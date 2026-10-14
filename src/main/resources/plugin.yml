@@ -9,15 +9,10 @@ load: POSTWORLD
 authors: [ GeorgieMeow ]
 
 commands:
-  ToggleStaffChat:
+  StaffChat:
     description: Switch your chat to a private staff chat!
-    usage: /<command>
-    aliases: [togglestaffchat, tsc]
-
-  MessageStaff:
-    description: send a chat message to staff chat without having to be in staff chat!
-    usage: /<command> [Message]
-    aliases: [messagestaff, ms]
+    usage: /<command> [message/togglechat]
+    aliases: [staffchat, tsc]
 
 permissions:
   StaffChat.isStaff:

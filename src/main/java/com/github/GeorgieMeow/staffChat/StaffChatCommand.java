@@ -15,36 +15,43 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-public class ToggleStaffChatCommand implements CommandExecutor, Listener, TabCompleter {
+public class StaffChatCommand implements CommandExecutor, Listener, TabCompleter {
     private static final Map<UUID, Boolean> staffChat = new HashMap<>();
     static StaffChat plugin = JavaPlugin.getPlugin(StaffChat.class);
     static String prefix = plugin.getConfig().getString("messages.prefix", "&c[SC] ");
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
         if (sender instanceof Player player) {
-            boolean inStaffChat = staffChat.getOrDefault(player.getUniqueId(), false); //get player data
             if (sender.hasPermission("StaffChat.isStaff")) {
 
-                if (!inStaffChat) {
-                    staffChat.put(player.getUniqueId(), true);
-                    sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-on", "&aStaff chat enabled.")));
+                boolean inStaffChat = staffChat.getOrDefault(player.getUniqueId(), false);
+
+                if (args[0].equalsIgnoreCase("togglechat")) {
+                    if (!inStaffChat) {
+                        staffChat.put(player.getUniqueId(), true);
+                        sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-on", "&aStaff chat enabled.")));
+
+                    } else {
+                        staffChat.put(player.getUniqueId(), false);
+                        sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-off", "&cStaff chat disabled.")));
+                    }
+                    return true;
 
                 } else {
-                    staffChat.put(player.getUniqueId(), false);
-                    sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-off", "&cStaff chat disabled.")));
+                    sendStaffMessage(player, args[0]);
+                    return true;
                 }
-                return true;
-
             } else {
                 sender.sendMessage(plugin.getConfig().getString("messages.no-permission", "You don't have permission to run this command!"));
                 return true;
             }
-        } else {
+        }else{
             sender.sendMessage("You must run this command as a player!");
             return true;
         }
@@ -83,6 +90,15 @@ public class ToggleStaffChatCommand implements CommandExecutor, Listener, TabCom
 
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
-        return List.of();
+        if (sender.hasPermission("StaffChat.isStaff")) {
+            List<String> suggestions = new ArrayList<>();
+            if (args.length == 1) {
+                suggestions.add("[message/toggle]");
+            }
+            return suggestions;
+        }else{
+
+            return List.of();
+        }
     }
 }
