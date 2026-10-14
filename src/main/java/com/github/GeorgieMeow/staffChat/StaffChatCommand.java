@@ -92,8 +92,10 @@ public class StaffChatCommand implements CommandExecutor, Listener, TabCompleter
     public @Nullable List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String @NotNull [] args) {
         if (sender.hasPermission("StaffChat.isStaff")) {
             List<String> suggestions = new ArrayList<>();
+
             if (args.length == 1) {
-                suggestions.add("[message/toggle]");
+                suggestions.add("[Message]");
+                suggestions.add("togglechat");
             }
             return suggestions;
         }else{

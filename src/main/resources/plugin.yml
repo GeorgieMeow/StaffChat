@@ -12,7 +12,7 @@ commands:
   StaffChat:
     description: Switch your chat to a private staff chat!
     usage: /<command> [message/togglechat]
-    aliases: [staffchat, tsc]
+    aliases: [staffchat, sc]
 
 permissions:
   StaffChat.isStaff:
