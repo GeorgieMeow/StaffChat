@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-public class StaffChatToggleCommand implements CommandExecutor, Listener, TabCompleter {
+public class ToggleStaffChatCommand implements CommandExecutor, Listener, TabCompleter {
     private static final Map<UUID, Boolean> staffChat = new HashMap<>();
     static StaffChat plugin = JavaPlugin.getPlugin(StaffChat.class);
     static String prefix = plugin.getConfig().getString("messages.prefix", "&c[SC] ");

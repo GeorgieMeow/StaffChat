@@ -15,15 +15,15 @@ boolean started = false;
             started = true;
     }
     void registerCommands() {
-        StaffChatToggleCommand staffChatToggleCommand = new StaffChatToggleCommand();
+        ToggleStaffChatCommand toggleStaffChatCommand = new ToggleStaffChatCommand();
         StaffChatCommand staffChatCommand = new StaffChatCommand();
-        Objects.requireNonNull(getCommand("ToggleStaffChat")).setExecutor(staffChatToggleCommand);
-        Objects.requireNonNull(getCommand("ToggleStaffChat")).setTabCompleter(staffChatToggleCommand);
+        Objects.requireNonNull(getCommand("ToggleStaffChat")).setExecutor(toggleStaffChatCommand);
+        Objects.requireNonNull(getCommand("ToggleStaffChat")).setTabCompleter(toggleStaffChatCommand);
 
         Objects.requireNonNull(getCommand("StaffChat")).setExecutor(staffChatCommand);
         Objects.requireNonNull(getCommand("StaffChat")).setTabCompleter(staffChatCommand);
 
-        Objects.requireNonNull(getServer().getPluginManager()).registerEvents(staffChatToggleCommand, this);
+        Objects.requireNonNull(getServer().getPluginManager()).registerEvents(toggleStaffChatCommand, this);
     }
 
     @Override

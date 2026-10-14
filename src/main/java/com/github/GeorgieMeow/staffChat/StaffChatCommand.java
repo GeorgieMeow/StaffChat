@@ -18,7 +18,7 @@ public class StaffChatCommand implements CommandExecutor, TabCompleter {
         if(sender instanceof Player player) {
             if(player.hasPermission("StaffChat.isStaff")) {
                 if(args.length == 1) {
-                    StaffChatToggleCommand.sendStaffMessage(player, args[0]);
+                    ToggleStaffChatCommand.sendStaffMessage(player, args[0]);
                     return true;
                 }else{
                     return false;
