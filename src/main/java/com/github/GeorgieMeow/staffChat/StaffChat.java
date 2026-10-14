@@ -2,8 +2,6 @@ package com.github.GeorgieMeow.staffChat;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.Objects;
-
 public final class StaffChat extends JavaPlugin {
 boolean started = false;
     @Override
@@ -17,11 +15,11 @@ boolean started = false;
     void registerCommands() {
         StaffChatToggleCommand staffChatToggleCommand = new StaffChatToggleCommand();
         StaffChatCommand staffChatCommand = new StaffChatCommand();
-        Objects.requireNonNull(getCommand("StaffChatToggle")).setExecutor(staffChatToggleCommand);
-        Objects.requireNonNull(getCommand("StaffChatToggle")).setTabCompleter(staffChatToggleCommand);
+        getCommand("ToggleStaffChat").setExecutor(staffChatToggleCommand);
+        getCommand("ToggleStaffChat").setTabCompleter(staffChatToggleCommand);
 
-        Objects.requireNonNull(getCommand("StaffChat")).setExecutor(staffChatCommand);
-        Objects.requireNonNull(getCommand("StaffChat")).setTabCompleter(staffChatCommand);
+        getCommand("StaffChat").setExecutor(staffChatCommand);
+        getCommand("StaffChat").setTabCompleter(staffChatCommand);
 
         getServer().getPluginManager().registerEvents(staffChatToggleCommand, this);
     }

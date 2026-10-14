@@ -9,10 +9,10 @@ load: POSTWORLD
 authors: [ GeorgieMeow ]
 
 commands:
-  StaffChatToggle:
+  ToggleStaffChat:
     description: Switch your chat to a private staff chat!
     usage: /<command>
-    aliases: [togglestaffchat, sct, sct]
+    aliases: [togglestaffchat, tsc]
 
     StaffChat:
       description: send a chat message to staff chat without having to be in staff chat!
