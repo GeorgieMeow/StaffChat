@@ -1,6 +1,7 @@
 package com.github.GeorgieMeow.staffChat;
 
 import io.papermc.paper.event.player.AsyncChatEvent;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -31,11 +32,11 @@ public class ToggleStaffChatCommand implements CommandExecutor, Listener, TabCom
 
                 if (!inStaffChat) {
                     staffChat.put(player.getUniqueId(), true);
-                    sender.sendRichMessage(prefix + plugin.getConfig().getString("messages.toggle-on", "&aStaff chat enabled."));
+                    sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-on", "&aStaff chat enabled.")));
 
                 } else {
                     staffChat.put(player.getUniqueId(), false);
-                    sender.sendRichMessage(prefix + plugin.getConfig().getString("messages.toggle-off", "&cStaff chat disabled."));
+                    sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-off", "&cStaff chat disabled.")));
                 }
                 return true;
 
@@ -74,7 +75,7 @@ public class ToggleStaffChatCommand implements CommandExecutor, Listener, TabCom
             if(player.hasPermission("StaffChat.isStaff")) {
                 inStaffChannel = staffChat.getOrDefault(player.getUniqueId(), false);
                 if (inStaffChannel) {
-                    player.sendRichMessage(formatted);
+                    player.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(formatted));
                 }
             }
         }
