@@ -3,8 +3,8 @@ description: $description
 version: '${version}'
 
 main: com.github.GeorgieMeow.staffChat.StaffChat
-api-version: '1.21.11'
-load: POSTWORLD
+api-version: '26.3'
+load: POST WORLD
 
 authors: [ GeorgieMeow ]
 
