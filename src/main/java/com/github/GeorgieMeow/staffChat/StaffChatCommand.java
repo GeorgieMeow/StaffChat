@@ -81,6 +81,9 @@ public class StaffChatCommand implements CommandExecutor, Listener, TabCompleter
         String formatted = format.replace("%player%", sender.getName()).replace("%message%", message);
         boolean inStaffChannel = staffChat.getOrDefault(sender.getUniqueId(), false);
         if(!inStaffChannel) {
+            if(format.contains("%prefix%")){
+                formatted = format.replace("%prefix%",plugin.getPlayerPrefix(sender));
+            }
             sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(formatted));
         }
 
@@ -88,6 +91,9 @@ public class StaffChatCommand implements CommandExecutor, Listener, TabCompleter
             if(player.hasPermission("StaffChat.isStaff")) {
                 inStaffChannel = staffChat.getOrDefault(player.getUniqueId(), false);
                 if (inStaffChannel) {
+                    if(format.contains("%prefix%")){
+                        formatted = format.replace("%prefix%",plugin.getPlayerPrefix(player));
+                    }
                     player.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(formatted));
                 }
             }

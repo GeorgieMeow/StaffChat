@@ -19,3 +19,6 @@ permissions:
     description: Allows switching to staff chat!
     default: op
 
+    softdepend:
+      -LuckPerms
+
