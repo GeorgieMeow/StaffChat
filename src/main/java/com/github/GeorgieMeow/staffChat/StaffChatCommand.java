@@ -32,20 +32,25 @@ public class StaffChatCommand implements CommandExecutor, Listener, TabCompleter
 
                 boolean inStaffChat = staffChat.getOrDefault(player.getUniqueId(), false);
 
-                if (args[0].equalsIgnoreCase("togglechat")) {
-                    if (!inStaffChat) {
-                        staffChat.put(player.getUniqueId(), true);
-                        sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-on", "&aStaff chat enabled.")));
+                if(args.length == 1){
+                    if (args[0].equalsIgnoreCase("togglechat")) {
+                        if (!inStaffChat) {
+                            staffChat.put(player.getUniqueId(), true);
+                            sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-on", "&aStaff chat enabled.")));
+
+                        } else {
+                            staffChat.put(player.getUniqueId(), false);
+                            sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-off", "&cStaff chat disabled.")));
+                        }
+                        return true;
 
                     } else {
-                        staffChat.put(player.getUniqueId(), false);
-                        sender.sendMessage(LegacyComponentSerializer.legacy('&').deserialize(prefix + plugin.getConfig().getString("messages.toggle-off", "&cStaff chat disabled.")));
+                        sendStaffMessage(player, args[0]);
+                        return true;
                     }
-                    return true;
 
-                } else {
-                    sendStaffMessage(player, args[0]);
-                    return true;
+                }else{
+                    return false;
                 }
             } else {
                 sender.sendMessage(plugin.getConfig().getString("messages.no-permission", "You don't have permission to run this command!"));
@@ -56,6 +61,7 @@ public class StaffChatCommand implements CommandExecutor, Listener, TabCompleter
             return true;
         }
     }
+
 
     @EventHandler
     public void onPlayerChat(AsyncChatEvent event) {
